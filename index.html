@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá, Marilene.</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+
+        <div class="painel">
+            <h1> Olá, moça gostosa. Dona desse monumental par de coxas.</h1>
+    
+            <img src="https://www.icegif.com/wp-content/uploads/2022/05/icegif-985.gif" alt="">
+    
+            <h2>Aceita ficar comigo? </h2>
+            
+    
+            <a href="https://www.youtube.com/watch?v=ULF3zgYVJW0"><button id="sim" > Sim! </button></a>
+            <button onmouseover="fuja()" id="nao"> Não! </button>
+            
+        </div>
+    
+        <script>
+            function fuja(){
+                var botaoNao = document.getElementById("nao")
+    
+                var larguraJanela = window.innerWidth;
+                var alturaJanela = window.innerHeight;
+    
+                var maxX = larguraJanela - botaoNao.offsetWidth;
+                var maxY = alturaJanela - botaoNao.offsetHeight;
+    
+                var aleatorioX = Math.floor(Math.random() * maxX);
+                var aleatorioY = Math.floor(Math.random() * maxY);
+    
+                botaoNao.style.left = aleatorioX + "px";
+                botaoNao.style.top = aleatorioY + "px";
+    
+    
+            }
+        </script>
+    </body>
+    
+    
+        
